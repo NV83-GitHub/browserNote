@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "ChromeNote",
+    "version": "1.0",
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
